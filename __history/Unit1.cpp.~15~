@@ -102,12 +102,3 @@ void __fastcall TForm1::Button9Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TForm1::Exit1Click(TObject *Sender)
-{
-	if (Application->MessageBoxW(L"Exit the application?", L"EXit", MB_YESNO|MB_ICONQUESTION|MB_DEFBUTTON2) == IDYES) {
-        Application->Terminate();
-	}
-}
-//---------------------------------------------------------------------------
-
-

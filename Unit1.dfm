@@ -10,6 +10,7 @@ object Form1: TForm1
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  Menu = MainMenu1
   OldCreateOrder = False
   DesignSize = (
     843
@@ -295,5 +296,27 @@ object Form1: TForm1
     DefaultExt = '.txt'
     Left = 504
     Top = 272
+  end
+  object MainMenu1: TMainMenu
+    Left = 600
+    Top = 272
+    object Application1: TMenuItem
+      Caption = 'Application'
+      object Memo2: TMenuItem
+        Caption = 'Memo'
+        object Saveas1: TMenuItem
+          Caption = 'Save as ...'
+          OnClick = Button8Click
+        end
+        object Open1: TMenuItem
+          Caption = 'Open ...'
+          OnClick = Button9Click
+        end
+      end
+      object Exit1: TMenuItem
+        Caption = 'Exit'
+        OnClick = Exit1Click
+      end
+    end
   end
 end

@@ -9,6 +9,7 @@
 #include <Vcl.Forms.hpp>
 #include <Vcl.ComCtrls.hpp>
 #include <Vcl.Dialogs.hpp>
+#include <Vcl.Menus.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -46,6 +47,12 @@ __published:	// IDE-managed Components
 	TButton *Button9;
 	TSaveDialog *SaveDialog1;
 	TOpenDialog *OpenDialog1;
+	TMainMenu *MainMenu1;
+	TMenuItem *Application1;
+	TMenuItem *Exit1;
+	TMenuItem *Memo2;
+	TMenuItem *Saveas1;
+	TMenuItem *Open1;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Button2Click(TObject *Sender);
 	void __fastcall MagazineButtonClick(TObject *Sender);
@@ -55,6 +62,7 @@ __published:	// IDE-managed Components
 	void __fastcall Button7Click(TObject *Sender);
 	void __fastcall Button8Click(TObject *Sender);
 	void __fastcall Button9Click(TObject *Sender);
+	void __fastcall Exit1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);

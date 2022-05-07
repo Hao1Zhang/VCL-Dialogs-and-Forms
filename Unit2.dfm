@@ -25,8 +25,9 @@ object Form2: TForm2
     Top = 35
     Width = 321
     Height = 21
+    NumbersOnly = True
     TabOrder = 0
-    Text = 'Edit1'
+    Text = '24'
   end
   object Button1: TButton
     Left = 343
@@ -34,6 +35,7 @@ object Form2: TForm2
     Width = 75
     Height = 25
     Caption = 'OK'
+    ModalResult = 1
     TabOrder = 1
   end
   object Button2: TButton
@@ -41,7 +43,8 @@ object Form2: TForm2
     Top = 32
     Width = 75
     Height = 25
-    Caption = 'Cancle'
+    Caption = 'Cancel'
+    ModalResult = 2
     TabOrder = 2
   end
 end
